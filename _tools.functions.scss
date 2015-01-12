@@ -8,8 +8,8 @@
 //    You can declare declarations like so:
 // 
 //    .selector {
-//        background-image: image('logo.png'), none;
-//        background-image: image('logo.svg');
+//        background-image: img('logo.png'), none;
+//        background-image: img('logo.svg');
 //    }
 $plump-asset-base-path: '..'                !default;
 
@@ -17,7 +17,7 @@ $plump-asset-base-path: '..'                !default;
   @return url($plump-asset-base-path + '/' + $type + '/' + $file);
 }
 
-@function image($file) {
+@function img($file) {
   @return asset('images', $file);
 }
 
