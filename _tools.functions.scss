@@ -14,13 +14,13 @@
 $plump-asset-base-path: '..'                !default;
 
 @function asset($type, $file) {
-  @return url($plump-asset-base-path + '/' + $type + '/' + $file);
+	@return url($plump-asset-base-path + '/' + $type + '/' + $file);
 }
 
 @function img($file) {
-  @return asset('images', $file);
+	@return asset('images', $file);
 }
 
 @function font($file) {
-  @return asset('fonts', $file);
+	@return asset('fonts', $file);
 }
